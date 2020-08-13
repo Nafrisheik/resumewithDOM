@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GUVI Resumw with tags</title>
+    <style>
+      .topbox {
+        color: gray;
+        font-size: 200px;
+        /* width: 800px;
+        height: 800px; */
+        margin-left: 300px;
+        margin-right: 300px;
+        background-color: gray;
+      }
+      .photo {
+        position: relative;
+        top: -20px;
+        left: 320px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 200px;
+        width: 30%;
+        background-color: chocolate;
+        border-color: chartreuse;
+        border-style: dotted;
+        /* border-style: double; */
+        /* border-spacing: -200px; */
+
+        color: blanchedalmond;
+      }
+      .heading {
+        position: relative;
+        top: -148px;
+        left: 295px;
+        margin-left: 300px;
+        margin-right: 300px;
+        background-color: rgb(220, 190, 23);
+        display: inline-block;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+      h1 {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .twoblocks {
+        position: relative;
+        font-size: 35px;
+        width: 100%;
+        margin-right: 30px;
+        border: hidden;
+        background-color: lightgray;
+      }
+      .resumecontent {
+        top: -100px;
+        position: relative;
+        margin-left: 300px;
+        margin-right: 300px;
+        /* width: 920px; */
+        /* margin-right: 300px; */
+        height: 1500px;
+        /* background-color: lightsalmon; */
+        align-items: center;
+      }
+      .resumeside1 {
+        position: absolute;
+        /* margin-right: 100px; */
+        /* float: left; */
+        border-right: ridge;
+
+        width: 450px;
+        /* background-color: lawngreen; */
+      }
+      .resumeside2 {
+        position: absolute;
+        right: 0;
+        /* float: left; */
+        width: 450px;
+        /* background-color: rgb(252, 0, 76); */
+      }
+      h2 {
+        font-size: 40px;
+        margin-left: 50px;
+      }
+      h5{
+        /* font-size: 40px; */
+        margin-left: 50px;
+      }
+      table {
+        margin-top: 0px;
+        margin-left: 60px;
+      }
+      p {
+        margin-top: 0px;
+        margin-left: 50px;
+      }
+      ul {
+        margin-left: 35px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      var topBox = document.createElement("div");
+      topBox.className = "topbox";
+      var photoBox = document.createElement("div");
+      photoBox.className = "photo";
+      var image = document.createElement("img");
+      image.style.width = "30%";
+      var firstBlock = document.createElement("div");
+      firstBlock.className = "twoblocks";
+      firstBlock.style.color = "lightgray";
+      firstBlock.innerText = "&nbsp";
+      var secondBlock = document.createElement("div");
+      secondBlock.className = "twoblocks";
+      secondBlock.style.backgroundColor = "gray";
+      secondBlock.innerText = "&nbsp";
+
+      var thirdBlock = document.createElement("div");
+      thirdBlock.className = "twoblock";
+      thirdBlock.style.fontSize = "30px";
+      thirdBlock.style.textAlign = "center";
+      thirdBlock.style.backgroundColor = "white";
+      thirdBlock.style.borderBottomStyle = "ridge";
+      thirdBlock.innerText =
+        "No.36, Jeelani Sahib Street, Alandur, Channai-16|91 7299367483";
+      photoBox.appendChild(image);
+      topBox.append(photoBox, firstBlock, secondBlock, thirdBlock);
+      document.body.appendChild(topBox);
+
+      var headingBox = document.createElement("div");
+      headingBox.className = "heading";
+      var heading = document.createElement("h1");
+      heading.innerText = "S. Irfan Hussain";
+      headingBox.appendChild(heading);
+      document.body.appendChild(headingBox);
+
+      var resumeContent = document.createElement("div");
+      resumeContent.className = "resumecontent";
+      var resumeSideOne = document.createElement("div");
+      resumeSideOne.className = "resumeside1";
+      var Portion1 = document.createElement("div");
+      Portion1.className = "portions";
+      var h2p1 = document.createElement("h2");
+      h2p1.innerText = "Profile";
+      var image1 = document.createElement("img");
+      image1.src = "profile.png";
+      image1.style.width = "30px";
+      h2p1.appendChild(image1);
+      var p1 = document.createElement("p");
+      p1.innerText =
+        "Aspiring Web developer with adequate programming skills. Very much excited to be employed in my first technical role to enhance my skills on full stack and hopefully work on individual projects.";
+      Portion1.append(h2p1, p1);
+      resumeSideOne.appendChild(Portion1);
+
+      var Portion2 = document.createElement("div");
+      Portion2.className = "portions";
+      var h2p2 = document.createElement("h2");
+      h2p2.innerText = "Skills";
+      var image2 = document.createElement("img");
+      image2.src = "skills.png";
+      image2.style.width = "30px";
+      h2p2.appendChild(image2);
+      // h2p2.innerText = "Skills";
+      // var image2 = document.createElement("img");
+      // image2.src = "skills.png";
+      // image2.style.width = "30px";
+      // h2p2.appendChild(image1);
+      var p2 = document.createElement("h5");         
+      p2.innerText = "Technical Skills";
+
+var table21=document.createElement("table");
+var tr21=document.createElement("tr");
+var td211=document.createElement("td");
+td211.innerText="Javascript";
+var td212=document.createElement("td");
+// td212.innerText="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+var progress21=document.createElement("progress");
+progress21.max="100";
+progress21.value="80";
+td212.appendChild(progress21);
+tr21.append(td211,td212);
+
+var tr22=document.createElement("tr");
+var td221=document.createElement("td");
+td221.innerText="HTML";
+var td222=document.createElement("td");
+// td222.innerText="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+var progress22=document.createElement("progress");
+progress22.max="100";
+progress22.value="80";
+td222.appendChild(progress22);
+tr22.append(td221,td222);
+
+var tr23=document.createElement("tr");
+var td231=document.createElement("td");
+td231.innerText="CSS";
+var td232=document.createElement("td");
+// td232.innerText="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+var progress23=document.createElement("progress");
+progress23.max="100";
+progress23.value="80";
+td232.appendChild(progress23);
+tr23.append(td231,td232);
+
+
+var tr24=document.createElement("tr");
+var td241=document.createElement("td");
+td241.innerText="Python";
+var td242=document.createElement("td");
+// spanElement.insertAdjacentHTML('afterend', "&nbsp;")
+
+// td242.innerText="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+var progress24=document.createElement("progress");
+progress24.max="100";
+progress24.value="80";
+td242.appendChild(progress24);
+tr24.append(td241,td242);
+table21.append(tr21,tr22,tr23,tr24);
+Portion2.append(h2p2,p2,table21);
+resumeSideOne.appendChild(Portion2);
+// resumeContent.appendChild(resumeSideOne);
+// document.body.appendChild(resumeContent);
+
+var Portion3 =document.createElement("div");
+Portion3.className="portions";
+var h2p3 =document.createElement("h2");
+h2p3.innerText=" Work experience";
+var image3=document.createElement("img");
+image3.src="work.png";
+image3.style.width="30px";
+h2p3.appendChild(image3);
+// h2p3.innerText=" Work experience";
+var p3 = document.createElement("h5");
+p3.innerText="Machine Learning Data Associate-Alexa Data Services";
+var ul3 =document.createElement("ul");
+var li31=document.createElement("li");
+li31.innerText="Lead a team of 12 for a special process and had been in the forefront in successful establishment of the pilot project.";
+var li32=document.createElement("li");
+li32.innerText="Have been part of conference calls involving internal customers of various levels across globe for pilot processes.";
+var li33=document.createElement("li");
+li33.innerText="Have successfully implemented several innovative ideas which can speed up and increase the efficiency of the process.";
+ul3.append(li31,li32,li33);
+Portion3.append(h2p3,p3,ul3);
+resumeSideOne.appendChild(Portion3);
+resumeContent.appendChild(resumeSideOne);
+document.body.appendChild(resumeContent);
+
+var resumeSideTwo =document.createElement("div");
+resumeSideTwo.className="resumeside2";
+var Portion4 = document.createElement("div");
+Portion4.className="portions";
+var h2p4 =document.createElement("h2");
+h2p4.innerText=" Educational Experience";
+
+var image4=document.createElement("img");
+image4.src="work.png";
+image4.style.width="30px";
+h2p4.appendChild(image4);
+// h2p4.innerText=" Educational Experience";
+var p4 = document.createElement("h5");
+p4.innerText="Electrical and Electronics Engineering";
+var ul4 =document.createElement("ul");
+var li41=document.createElement("li");
+li41.innerText="Have undergone in-plant training at Tamil Nadu Electricity Board, control center to understand the Load Management, Cable fault locating, Testing and SCADA operating Principles.";
+var li42=document.createElement("li");
+li42.innerText="Have visited Koyambedu 110KV substation, Chennai, to understand the Power Distribution Process.";
+var li43=document.createElement("li");
+li43.innerText="Industrial visit to All India Radio, Chennai to understand processes of Radio Communication.";
+var li44=document.createElement("li");
+li44.innerText="Have visited Kundah Power Plant, Ooty to understand the operations of Hydro-Electric power plant.";
+ul4.append(li41,li42,li43,li44);
+Portion4.append(h2p4,p4,ul4);
+resumeSideTwo.appendChild(Portion4);
+
+var Portion5 = document.createElement("div");
+Portion5.className="portions";
+var h2p5 =document.createElement("h2");
+h2p5.innerText=" Education";
+var image5=document.createElement("img");
+image5.src="edu.png";
+image5.style.width="30px";
+h2p5.appendChild(image5);
+// h2p5.innerText=" Education";
+var p5 = document.createElement("h5");
+p5.innerText="Bachelors in Engineering";
+var p51 =document.createElement("p");
+p51.innerText="MSAJCE,Chennai";
+var p52 =document.createElement("p");
+p52.innerText="Full Stack Training at GUVI.";
+var ul5 =document.createElement("ul");
+var li51=document.createElement("li");
+li51.innerText="Have successfully completed 1 hackathons";
+var li52=document.createElement("li");
+li52.innerText="Have worked on projects based on html,CSS, Javascript.";
+var li53=document.createElement("li");
+li53.innerText="Currently working on projects based on Web Development.";
+var li54=document.createElement("li");
+li54.innerText="Have been part of the ATLAS program in 2018 and have attended training on basic Testing and Support.";
+ul5.append(li51,li52,li53,li54);
+Portion5.append(h2p5,p51,p52,p5,ul5);
+resumeSideTwo.appendChild(Portion5);
+resumeContent.appendChild(resumeSideTwo);
+document.body.appendChild(resumeContent);
+    </script>
+  </body>
+</html>
